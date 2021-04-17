@@ -54,7 +54,6 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    console.log("==================", fileName, data);
     fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, (err) => {
         if (err) {
             console.log(err);
